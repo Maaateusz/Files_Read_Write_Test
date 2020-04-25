@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/TitleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/SaveInternalButton"
+        app:layout_constraintEnd_toEndOf="@+id/TitleEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TitleEditText"
+        app:layout_constraintTop_toBottomOf="@+id/TitleEditText"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/SaveInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Save to Internal Storage"
+        app:layout_constraintBottom_toTopOf="@+id/OpenFileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/OpenFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Open FIle"
+        app:layout_constraintBottom_toTopOf="@+id/OpenImageButton"
+        app:layout_constraintEnd_toEndOf="@+id/SaveInternalButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/SaveInternalButton" />
+
+    <Button
+        android:id="@+id/OpenImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Open Image"
+        app:layout_constraintBottom_toTopOf="@+id/SaveCacheButton"
+        app:layout_constraintEnd_toEndOf="@+id/OpenFileButton"
+        app:layout_constraintStart_toStartOf="@+id/OpenFileButton" />
+
+    <Button
+        android:id="@+id/SaveCacheButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Save to Chache"
+        app:layout_constraintBottom_toTopOf="@+id/InternalStoragePathButton"
+        app:layout_constraintEnd_toEndOf="@+id/OpenImageButton"
+        app:layout_constraintStart_toStartOf="@+id/OpenImageButton" />
+
+    <Button
+        android:id="@+id/InternalStoragePathButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Internal Storage Path"
+        app:layout_constraintBottom_toTopOf="@+id/DeleteFileButton"
+        app:layout_constraintEnd_toEndOf="@+id/SaveCacheButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DeleteFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Delete File"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/InternalStoragePathButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/InternalPathTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="___"
+        app:layout_constraintBottom_toBottomOf="@+id/InternalStoragePathButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/InternalStoragePathButton"
+        app:layout_constraintTop_toTopOf="@+id/InternalStoragePathButton" />
+
+    <EditText
+        android:id="@+id/DeleteFileNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="File Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/DeleteFileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DeleteFileButton"
+        app:layout_constraintTop_toTopOf="@+id/DeleteFileButton" />
+
+    <Button
+        android:id="@+id/GoToExternalStorageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="External Storage"
+        app:layout_constraintBottom_toTopOf="@+id/SaveInternalButton"
+        app:layout_constraintEnd_toEndOf="@+id/SaveInternalButton"
+        app:layout_constraintStart_toStartOf="@+id/SaveInternalButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

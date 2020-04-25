@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExternalMemoryActivity">
+
+    <EditText
+        android:id="@+id/TitleExternalEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextExternalEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/TitleExternalEditText"
+        app:layout_constraintStart_toStartOf="@+id/TitleExternalEditText"
+        app:layout_constraintTop_toBottomOf="@+id/TitleExternalEditText" />
+
+    <Button
+        android:id="@+id/LoadExteranlCacheButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LoadExteranlCacheButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/LoadExternalPrivateStorageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LoadExternalPrivateStorageButton"
+        app:layout_constraintBottom_toTopOf="@+id/SaveExteranlCacheButton"
+        app:layout_constraintEnd_toEndOf="@+id/SaveExteranlCacheButton"
+        app:layout_constraintStart_toStartOf="@+id/SaveExteranlCacheButton" />
+
+    <Button
+        android:id="@+id/SaveExternalPublicStorageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SaveExternaPubliclStorageButton"
+        app:layout_constraintBottom_toTopOf="@+id/LoadExternalPrivateStorageButton"
+        app:layout_constraintEnd_toEndOf="@+id/LoadExternalPrivateStorageButton"
+        app:layout_constraintStart_toStartOf="@+id/LoadExternalPrivateStorageButton" />
+
+    <Button
+        android:id="@+id/SaveExteranlCacheButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SaveExteranlCacheButton"
+        app:layout_constraintBottom_toTopOf="@+id/LoadExteranlCacheButton"
+        app:layout_constraintEnd_toEndOf="@+id/LoadExteranlCacheButton"
+        app:layout_constraintStart_toStartOf="@+id/LoadExteranlCacheButton" />
+
+    <Button
+        android:id="@+id/SaveExternalPrivateStorageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SaveExternalPrivateStorageButton"
+        app:layout_constraintBottom_toTopOf="@+id/SaveExternalPublicStorageButton"
+        app:layout_constraintStart_toStartOf="@+id/SaveExternalPublicStorageButton" />
+
+    <Button
+        android:id="@+id/LoadExternalPublicStorageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LoadExternalPublicStorageButton"
+        app:layout_constraintBottom_toTopOf="@+id/SaveExternalPrivateStorageButton"
+        app:layout_constraintEnd_toEndOf="@+id/SaveExternalPrivateStorageButton"
+        app:layout_constraintStart_toStartOf="@+id/SaveExternalPrivateStorageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

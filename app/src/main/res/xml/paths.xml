@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+	<!-- Use it if you wish to store file in App External Private storage -->
+	<!--<external-path name="myImage" path="Android/data/com.sriyanksiddhartha.filesystemdemo/files/Download" />-->
+
+	<!-- Use it if you wish to store file in External Public Storage -->
+	<external-path name="myImage" path="Download/" />
+</paths>
